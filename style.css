@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2? família=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2? família=Poppins:wght@300;400&display=swap');
 
 body {
     margin : 0;
     padding: 0;
-    font-family: 'Great Vibes', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: rgb(247, 247, 98);
 }
 
@@ -27,9 +27,10 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 60px;
     text-transform: uppercase;
     letter-spacing: 3px;
+    color: rgb(250, 219, 81);
 }
 
 h2 {
@@ -103,6 +104,10 @@ a:hover {
     transform: rotate(0);
 }
 
+#toggle {
+    display: none;
+}
+
 /*MENU*/
 
 .menu {
@@ -118,7 +123,7 @@ a:hover {
     transition: 400ms ease-in-out 0s; 
 }
 
-.menu-items {
+.menu-itens {
     position: fixed;
     top: 0;
     left: 0;
@@ -131,10 +136,12 @@ a:hover {
     opacity: 0;
     visibility: hidden;
     transition: 400ms ease-in-out 0s;
+    font-size: 70px;
 }
 
 .menu-items ul {
     list-style-type: none;
+    visibility: hidden;
 }
 
 .menu-items ul li a {
@@ -144,6 +151,7 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 40px;
+    visibility: hidden;
 }
 
 /*ANIMAÇAO*/
@@ -158,4 +166,22 @@ a:hover {
     width: 30px;
     visibility: hidden;
     opacity: 0;
+}
+
+#toggle:checked + .checkbox .trace.trace:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 48px;
+}
+
+#toggle:checked + .checkbox {
+    background-color: #ffffff;
+}
+
+#toggle:checked ~ .menu {
+    box-shadow: 0px 0px 0px 100vmax #ffffff;
+    z-index: 1;
+}
+#toggle:checked ~ .menu-itens {
+    visibility: visible;
+    opacity: 1;
 }
