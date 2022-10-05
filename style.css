@@ -194,6 +194,8 @@ a:hover {
     font-family: 'Poppins';
 }
 
+/* CARDS */
+
 .container {
     height: auto;
     width: 100%;
@@ -217,5 +219,13 @@ a:hover {
     margin: 3rem 0 0 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #ffb5be;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: black;
+    cursor: pointer;
+    transition: 0.5 ease-in-out;
 }
