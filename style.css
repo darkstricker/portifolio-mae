@@ -221,11 +221,12 @@ a:hover {
     align-items: center;
     justify-content: center;
     background-color: #ffb5be;
+    /*background-image: url('./img/ssj5.JPG');*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     filter: grayscale(0.5);
     color: black;
     cursor: pointer;
-    transition: 0.5 ease-in-out;
+    transition: 0.5s ease-in-out;
 }
