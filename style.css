@@ -220,13 +220,12 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffb5be;
-    /*background-image: url('./img/ssj5.JPG');*/
+    background-color: #df132b;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: grayscale(0.5);
-    color: black;
+    filter: grayscale(0.2);
+    color: #1E1E2A;
     cursor: pointer;
-    transition: 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
