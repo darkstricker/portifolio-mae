@@ -198,11 +198,11 @@ a:hover {
 
 .container {
     height: auto;
-    width: 100%;
+    width: 100%;    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 3rem 0;
+    margin: 3;
 }
 
 .card-container {
@@ -223,9 +223,8 @@ a:hover {
     background-color: #df132b;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
     filter: grayscale(0.2);
     color: #1E1E2A;
     cursor: pointer;
-    transition: 0.4s ease-in-out;
+    transition: 0.34s ease-in-out;
 }
