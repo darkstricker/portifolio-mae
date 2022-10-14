@@ -5,6 +5,7 @@ body {
     padding: 0;
     font-family: 'Great Vibes', hand;
     color: rgb(247, 247, 98);
+    height: 215vh;
 }
 
 /* header */
@@ -98,16 +99,19 @@ a:hover {
 .checkbox .trace:nth-child(1) {
     top: 26px;
     transform: rotate(0);
+    position: fixed;
 }
 
 .checkbox   .trace:nth-child(2) {
     top: 45px;
     transform: rotate(0);
+    position: fixed;
 }
 
 .checkbox .trace:nth-child(3) {
     top: 66px;
     transform: rotate(0);
+    position: fixed;
 }
 
 #toggle {
@@ -203,6 +207,8 @@ a:hover {
     flex-direction: column;
     justify-content: space-evenly;
     margin: 3;
+    position: sticky;
+    top: 5000px;
 }
 
 .card-container {
@@ -216,7 +222,7 @@ a:hover {
     width: 300px;
     height: 300px;
     border-radius: 100%;
-    margin: 3rem 0 0 0;
+    margin: 4rem 0 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,8 +233,9 @@ a:hover {
     color: #1E1E2A;
     cursor: pointer;
     transition: 0.34s ease-in-out;
-
 }
- .secondh1 {
-    margin: 200px;
- }
+.card-text {
+    font-size: 21px;
+    font-family: 'Poppins';
+    color: black;
+}
