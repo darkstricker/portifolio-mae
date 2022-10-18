@@ -243,6 +243,10 @@ a:hover {
 }
 
 .card-wrapper {
+    font-family: 'Poppins';
+}
+
+.card-wrapper {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -266,7 +270,7 @@ a:hover {
 .card-wrapper h2 {
     font-size: 40px;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 3.5px;
     margin: 0;
     transition: 0.5 ease-in-out;
 }
@@ -285,8 +289,13 @@ a:hover {
 }
 
 .card:hover > .card-wrapper::before {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     opacity: 0.3;
+}
 
+.card:hover > .card-wrapper p {
+    opacity: 1;
+    visibility: visible;
+    font-size: 14px;
 }
